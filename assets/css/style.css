@@ -1,14 +1,160 @@
-a{
-    color:lightblue;
-}
 
-a:hover{
-    color: coral;
-}
+/* ---- reset ---- */
 
+html {
+    box-sizing: border-box;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+/* ---- elements style ---- */  
 img:hover{
     opacity: .7;
     -moz-box-shadow:    2px 2px 5px 2px rgb(231, 231, 231);
     -webkit-box-shadow: 2px 2px 5px 2px rgb(231, 231, 231);
     box-shadow:         2px 2px 5px 2px rgb(231, 231, 231);    
 }
+  
+/* ---- typography ---- */
+  
+body {
+    color: #111;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 147%;
+  }
+  
+/* h1 {
+    font-size: 64px;
+    font-family: "Arial"
+} */
+  
+h2 {}
+  
+h3 {}
+
+a{
+    color:lightblue;
+    text-decoration: none;
+}
+
+a:hover{
+    color: coral;
+}
+
+/* .title-header{
+    font-size: 50px;
+    font-family: "Lato";
+}
+
+.project-title{
+    font-size: 30px;
+    font-family: "Lato";
+}
+
+.section-title h3{
+    font-size: 40px;
+    font-family: "Arial";
+} */
+
+/* ---- layout ---- */
+  
+.page-header{
+    background:#313131;
+    color:rgb(231, 231, 231);
+    font-size: 20px;
+}
+
+.inline-list li{
+    display:inline-block;
+}
+
+.portfolio__list li{
+    width: 25%;
+    border: 2px;
+    padding: 20px;
+    margin: 10px;
+}
+  
+.main-footer {
+    color: white;
+    padding: 60px 0;
+    background: #111;
+  }
+  
+.container {
+    margin: 0 20px;
+    max-width: 960px;
+    border: 1px solid #111; 
+  }
+  
+section {
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  
+section:nth-of-type(even){
+    background: gray;
+}
+
+
+/* ---- components ---- */
+
+.page-header a{
+    color:rgb(231, 231, 231);
+}
+
+.page-header a:hover{
+    color:white;
+    font-weight: bold;
+}
+
+/* ---- header ---- */
+
+.page-header h1{
+    font-size: 1em;
+}
+  
+/* ---- section ---- */
+  
+  section#portfolio {
+    // ...
+  }
+  
+/* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+  
+  }
+  
+/* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .page-header{
+        background:#d35555;
+        color:rgb(231, 231, 231);
+        font-size: 20px;
+    }
+  }
+  
+/* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .container{
+       margin: 0 auto; 
+    }
+
+    .page-header h1{
+        font-size: 2em;
+    }
+  }
+  
+/* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+  
+  }
+
+
+
+
+
+
+
