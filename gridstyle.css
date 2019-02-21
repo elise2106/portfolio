@@ -1,0 +1,75 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+.box, .repeater-box{
+    background: coral;
+    color: white;
+    font-weight: 700;
+    padding: 20px;
+    font-size: 2em;
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    display:grid;
+    grid-template: repeat(3, 100px) / repeat(4, 100px);
+    grid-gap: 10px;
+}
+
+.box-1{
+    grid-column-start: span 4;
+    border: 1px dashed black;
+    background:white;
+    color: coral;
+}
+
+.box-2{
+    grid-area: 2 / 1 / 4 / 3;
+    background: yellow;
+    color:blue;
+    border: 1px double black;
+}
+
+.box-3{
+    grid-column-start: span 2;
+    background:black;
+    color:lightgray;
+}
+
+.box-4{
+    background:red;
+    color:black;
+}
+
+.repeater{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px, 1fr));
+    grid-gap:10px;
+}
+
+.repeater-box:first-child{
+    height:300px;
+}
+
+.pinterest{
+    columns:300px 3;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.pinterest .box{
+    break-inside: avoid-column;
+}
+
+.pinterest .box:first-child{
+    height:400px;
+    background:blue;
+}

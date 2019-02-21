@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Elise Design</title>
+    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,600|Playfair+Display:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -27,10 +28,11 @@
     <!-- Main content -->
     <main>
         <!-- Title Section -->
-        <section>
-            <header class="section-header">
-                <h1>Elise UX/UI Portfolio</h1>
-            </header>
+        <section class="banner">
+                <h1 class="typewrite" data-period="2000" data-type='[ "Hi, Im Elise.", "This is my UX/UI Portfolio.", "Keep scrolling to see my work", "And do not forget to say hi!" ]'>
+                        <span class="wrap"></span>
+                </h1>
+                <h2>A UX/UI Portfolio</h2>
         </section>
 
         <!-- Description Section -->
@@ -38,49 +40,105 @@
             <h2>I am a UX/UI Designer based in Barcelona</h2>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="section-title">
+        <!-- Projects Flexbox Section -->
+        <!-- <section id="projects" class="section-title">
             <div class="container">
                 <h3>My Work</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla qui sint culpa? Repudiandae voluptatem est, illo atque hic dolores, nesciunt inventore dolor repellat ex, non cum! Nulla velit perspiciatis quas.</p>
-                <ul class="inline-list portfolio__list">
+                <p class="section-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla qui sint culpa? Repudiandae voluptatem est, illo atque hic dolores, nesciunt inventore dolor repellat ex, non cum! Nulla velit perspiciatis quas.</p>
+                <ul class="flex-list">
                     <li>
                         <a href="#">
-                            <h2 class="project-title">Gig It</h2>
-                            <img src="https://via.placeholder.com/150" alt="Portfolio image 1">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, velit.</p>
+                            <img src="assets/images/concert.jpeg" alt="Portfolio image 1">
+                            <div class="portfolio-title">
+                                <h2 class="project-title">Gig It</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, velit.</p>
+                            </div>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <h2 class="project-title">LinkedIn appointment</h2>
-                            <img src="https://via.placeholder.com/150" alt="Portfolio image 2">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, velit.</p>
+                            <img src="assets/images/concert.jpeg" alt="Portfolio image 2">
+                            <div class="portfolio-title">
+                                <h2 class="project-title">LinkedIn appointment</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, velit.</p>
+                            </div>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <h2 class="project-title">Cultureta</h2>
-                            <img src="https://via.placeholder.com/150" alt="Portfolio image 3">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, velit.</p>
+                            <img src="assets/images/concert.jpeg" alt="Portfolio image 3">
+                            <div class="portfolio-title">
+                                <h2 class="project-title">Cultureta</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, velit.</p>
+                            </div>
                         </a>    
                     </li>
                     <li>
                         <a href="#">
-                            <h2 class="project-title">SaaS</h2>
-                            <img src="https://via.placeholder.com/150" alt="Portfolio image 4">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, velit.</p>
+                            <img src="assets/images/concert.jpeg" alt="Portfolio image 4">
+                            <div class="portfolio-title">
+                                <h2 class="project-title">SaaS</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, velit.</p>
+                            </div>
                         </a>    
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
+
+        <!-- Projects Grid Section -->
+        <section id="projects" class="section-title">
+                <div class="container">
+                    <h3>My Work</h3>
+                    <p class="section-intro">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla qui sint culpa? Repudiandae voluptatem est, illo atque hic dolores, nesciunt inventore dolor repellat ex, non cum! Nulla velit perspiciatis quas.
+                    </p>
+                    <ul class="grid-list">
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/concert.jpeg" alt="Portfolio image 1">
+                                <div class="portfolio-title">
+                                    <h2 class="project-title">Gig It</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, velit.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/concert.jpeg" alt="Portfolio image 2">
+                                <div class="portfolio-title">
+                                    <h2 class="project-title">LinkedIn appointment</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, velit.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/concert.jpeg" alt="Portfolio image 3">
+                                <div class="portfolio-title">
+                                    <h2 class="project-title">Cultureta</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, velit.</p>
+                                </div>
+                            </a>    
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/concert.jpeg" alt="Portfolio image 4">
+                                <div class="portfolio-title">
+                                    <h2 class="project-title">SaaS</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, velit.</p>
+                                </div>
+                            </a>    
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
         <!-- Links section -->
         <section class="section-title">
             <div class="container">
                 <h3>Links</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, perspiciatis.</p>
+                <p class="section-intro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, perspiciatis.</p>
                 <ul class="inline-list">
                     <li><a href="#">Link 1</a></li>
                     <li><a href="#">Link 2</a></li>
@@ -94,12 +152,14 @@
         <section id="contact" class="section-title">
             <div class="container">
                 <h3>Say hi!</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, inventore!</p>
-                <a href="mailto:elise.mateu@gmail.com">elise.mateu@gmail.com</a>
+                <p class="section-intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, inventore!</p>
+                <a class="btn" href="mailto:elise.mateu@gmail.com">elise.mateu@gmail.com</a>
             </div>
         </section>
     </main>
 
+
+    <!-- Footer -->
     <footer class="main-footer">
         <ul class="inline-list">
             <li>
@@ -115,6 +175,7 @@
         <p>© Elise Portfolio 2019</p>
         <a href="#top">Back to top</a>
     </footer>
+    <script src="assets/javascript/main.js"></script>
 </body>
 
 </html>
