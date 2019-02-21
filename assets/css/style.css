@@ -44,7 +44,12 @@ a{
 }
 
 a:hover{
-    color: coral;
+    color: #d35555;
+}
+
+footer .inline-list{
+    font-size: 30px;
+    padding-bottom: 30px;
 }
 
 /* ---- layout ---- */
@@ -57,7 +62,7 @@ a:hover{
 
   
 section {
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     padding-top: 20px;
   }
   
@@ -75,21 +80,29 @@ section:nth-of-type(even){
     background: #111;
   }
 
+footer{
+    text-align: center;
+}
+
 /* ---- components ---- */
 
 .btn{
     display: inline-block;
-    background: coral;
+    background:#d35555;
     padding: 2em; 
     color: #494949; 
     font-weight: 500;
     border-radius: 4px;
     transition: all .5s ease;
+    /* animation-name: blink;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite; */
 }
 
 .btn:hover{
     background: #494949;
-    color: coral;
+    color: #d35555;
 }
 
 
@@ -117,8 +130,9 @@ section:nth-of-type(even){
 }
 
 .page-header a:hover{
-    color:white;
-    font-weight: bold;
+    color:#d35555;
+    font-weight: 500;
+    transition: color .5s ease;
 }
 
 .page-header h1{
@@ -157,6 +171,8 @@ nav{
 
 .banner h2{
     margin-top: 30px;
+    animation-name: bounce;
+    animation-duration: 2s;
 }
 
 /* ---- Projects section ---- */
@@ -209,9 +225,35 @@ nav{
     display: inline-block;
 }
 
-  section#portfolio {
-    // ...
-  }
+#contact{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.video{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video .container{
+    width: 100%;
+}
+
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
   
 /* Small devices (landscape phones, 576px and up) */
   @media (min-width: 576px) {
@@ -224,6 +266,10 @@ nav{
         background:#d35555;
         color:rgb(231, 231, 231);
         font-size: 20px;
+    }
+
+    .page-header a:hover{
+        color:#494949;
     }
 
     .portfolio__list li{
@@ -240,6 +286,10 @@ nav{
 
     nav{
         flex-basis: 50%;
+    }
+
+    .video .container{
+        width: 500px;
     }
 
   }
@@ -272,6 +322,32 @@ nav{
   }
 
 
+
+/* ---- Animation functions ----*/
+
+@keyframes blink{
+    0%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes bounce{
+    0%{
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    60%{
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;        
+    }
+}
 
 
 
