@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Hind:300,400,600|Playfair+Display:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    
+
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -19,13 +19,18 @@
     <!-- page header -->
     <header class="page-header">
         <h1 class="title-header">Elise Portfolio</h1>
-        <nav>
-            <ul class="inline-list">
+        <nav class="page-menu">
+            <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact Me</a></li>
             </ul>
-        </nav>        
+        </nav>
+        <div class="navbar-toggle-button" id="menu_trigger">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+          </div>
     </header>
 
     <!-- Main content -->
@@ -39,8 +44,10 @@
         </section>
 
         <!-- Description Section -->
-        <section id="about" class="section-title">
-            <h2>I am a UX/UI Designer based in Barcelona</h2>
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">I am a UX/UI Designer based in Barcelona</h2>
+            </div>
         </section>
 
         <!-- Projects Flexbox Section -->
@@ -74,7 +81,7 @@
                                 <h2 class="project-title">Cultureta</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, velit.</p>
                             </div>
-                        </a>    
+                        </a>
                     </li>
                     <li>
                         <a href="#">
@@ -83,7 +90,7 @@
                                 <h2 class="project-title">SaaS</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, velit.</p>
                             </div>
-                        </a>    
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -122,7 +129,7 @@
                                     <h2 class="project-title">Cultureta</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, velit.</p>
                                 </div>
-                            </a>    
+                            </a>
                         </li>
                         <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                             <a href="#">
@@ -131,14 +138,14 @@
                                     <h2 class="project-title">SaaS</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, velit.</p>
                                 </div>
-                            </a>    
+                            </a>
                         </li>
                     </ul>
                 </div>
             </section>
 
         <!-- Links section -->
-        <section id="links" class="section-title">
+        <!-- <section id="links" class="section-title">
             <div class="container" data-aos="fade-up" data-aos-duration="1000">
                 <h3>Links</h3>
                 <p class="section-intro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, perspiciatis.</p>
@@ -149,7 +156,7 @@
                     <li><a href="#">Link 4</a></li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Contact section -->
         <section id="contact" class="section-title">
@@ -161,14 +168,14 @@
         </section>
 
         <!-- Video section -->
-        <section class="video">
+        <!-- <section class="video">
             <div class="container">
                     <div class="video-wrapper">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/kN0SVBCJqLs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
             </div>
-            
-        </section>
+
+        </section> -->
     </main>
 
 
@@ -187,7 +194,7 @@
         </ul>
         <p>© Elise Portfolio 2019</p>
     </footer>
-    <a href="#top">Back to top</a>
+    <a href="#top" class="back-to-top">↑</a>
 
     <!-- Scripts -->
     <script src="assets/javascript/main.js"></script>
