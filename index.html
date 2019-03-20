@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Hind:300,400,600|Playfair+Display:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    
+
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -19,13 +19,19 @@
     <!-- page header -->
     <header class="page-header">
         <h1 class="title-header">Elise Portfolio</h1>
-        <nav>
-            <ul class="inline-list">
+        <nav class="page-menu">
+            <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact Me</a></li>
+                <li><a class="cv" href="assets/pdf/CV-Elise-Mateu.pdf" target="_blank">CV</a></li>
             </ul>
-        </nav>        
+        </nav>
+        <div class="navbar-toggle-button" id="menu_trigger">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+          </div>
     </header>
 
     <!-- Main content -->
@@ -33,7 +39,7 @@
         <!-- Title Section -->
         <section class="banner">
                 <h1 class="typewrite" data-period="2000" data-type='[ "Hi, Im Elise.", "This is my portfolio.", "Keep scrolling for more", "And please say hi!" ]'>
-                        <span class="wrap"></span>
+                    <span class="wrap"></span>
                 </h1>
                 <h2>A UX/UI Portfolio</h2>
         </section>
@@ -79,7 +85,7 @@
                                 <h2 class="project-title">Cultureta</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, velit.</p>
                             </div>
-                        </a>    
+                        </a>
                     </li>
                     <li>
                         <a href="#">
@@ -88,7 +94,7 @@
                                 <h2 class="project-title">SaaS</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, velit.</p>
                             </div>
-                        </a>    
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -103,7 +109,7 @@
                     </p>
                     <ul class="grid-list">
                         <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
-                            <a href="#">
+                            <a href="assets/pdf/Gig_it.pdf" target="_blank">
                                 <img src="assets/images/concert.jpeg" alt="Portfolio image 1">
                                 <div class="portfolio-title">
                                     <h2 class="project-title">Gig It</h2>
@@ -112,7 +118,7 @@
                             </a>
                         </li>
                         <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                            <a href="#">
+                            <a href="assets/pdf/Linkedin.pdf" target="_blank">
                                 <img src="assets/images/concert.jpeg" alt="Portfolio image 2">
                                 <div class="portfolio-title">
                                     <h2 class="project-title">LinkedIn appointment</h2>
@@ -127,7 +133,7 @@
                                     <h2 class="project-title">Cultureta</h2>
                                     <p>Soon available! Be patient.</p>
                                 </div>
-                            </a>    
+                            </a>
                         </li>
                         <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                             <a href="#">
@@ -136,14 +142,14 @@
                                     <h2 class="project-title">SaaS</h2>
                                     <p>Soon available! Be patient.</p>
                                 </div>
-                            </a>    
+                            </a>
                         </li>
                     </ul>
                 </div>
             </section>
 
         <!-- Links section -->
-        <section id="links" class="section-title">
+        <!-- <section id="links" class="section-title">
             <div class="container" data-aos="fade-up" data-aos-duration="1000">
                 <h3>Links</h3>
                 <p class="section-intro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, perspiciatis.</p>
@@ -154,7 +160,7 @@
                     <li><a href="#">Link 4</a></li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Contact section -->
         <section id="contact" class="section-title">
@@ -166,14 +172,14 @@
         </section>
 
         <!-- Video section -->
-        <section class="video">
+        <!-- <section class="video">
             <div class="container">
                     <div class="video-wrapper">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/kN0SVBCJqLs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
             </div>
-            
-        </section>
+
+        </section> -->
     </main>
 
 
@@ -192,7 +198,7 @@
         </ul>
         <p>© Elise Portfolio 2019</p>
     </footer>
-    <a href="#top">Back to top</a>
+    <a href="#top" class="back-to-top">↑</a>
 
     <!-- Scripts -->
     <script src="assets/javascript/main.js"></script>

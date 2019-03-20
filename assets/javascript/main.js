@@ -54,3 +54,13 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+const menuTrigger = document.getElementById('menu_trigger');
+const menu = document.querySelector('.page-menu');
+
+menuTrigger.addEventListener('click', toggleMenu);
+
+function toggleMenu() {
+menu.classList.toggle('open');
+menuTrigger.classList.toggle('open');
+}
